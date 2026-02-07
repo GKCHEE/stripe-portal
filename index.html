@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Payment Portal | Chin Cheong Ghee</title>
+    <style>
+        /* General Page Layout */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        /* The Main Card Container */
+        .container {
+            background: white;
+            width: 100%;
+            max-width: 420px;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Profile Icon Area */
+        .icon-circle {
+            width: 70px;
+            height: 70px;
+            background-color: #000;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0 auto 20px auto;
+        }
+
+        /* Typography */
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #111;
+        }
+
+        p {
+            font-size: 15px;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        /* The Stripe Payment Button */
+        .pay-btn {
+            background-color: #635bff; /* Official Stripe Purple */
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 15px 0;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            transition: background-color 0.2s ease;
+            box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+        }
+
+        .pay-btn:hover {
+            background-color: #4b45e6;
+        }
+
+        /* Footer / Security Badge */
+        .footer {
+            margin-top: 25px;
+            font-size: 12px;
+            color: #8898aa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Profile Initials -->
+        <div class="icon-circle">CCG</div>
+
+        <!-- Title -->
+        <h1>Digital Services Payment</h1>
+
+        <!-- Description -->
+        <p>
+            Secure payment gateway for administrative services, 
+            IT consultation, and open-source support.
+        </p>
+
+        <!-- STRIPE BUTTON LINK -->
+        <!-- Note: This links securely to your Stripe account -->
+        <a href="https://buy.stripe.com/7sY4gz6Rg2JAceZgpE7ok00" target="_blank" class="pay-btn">
+            Pay Securely via Stripe
+        </a>
+
+        <!-- Security Footer -->
+        <div class="footer">
+            <span>🔒</span> Secured by Stripe Payments
+        </div>
+    </div>
+
+</body>
+</html>
